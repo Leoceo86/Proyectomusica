@@ -1,0 +1,57 @@
+h2{
+    color: orange;
+}
+h1{
+    color: red;
+}
+section article{
+    background-color: grey;
+}
+
+body{
+    background-image: url(../img/Portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.shows img{
+    
+    width: 500px
+}
+.shows ul{
+    position: absolute;
+    top: 330px;
+    right: 650px;
+}
+.shows iframe{
+    position: absolute;
+    top: 330px;
+    right: 230px;
+}
+/*Clase 07*/
+
+css> style.css >{} @media (max-width:480px)
+@media(max-width:480px){
+    body{
+        background-color: black;
+        }
+}
+/*Destock First*/
+body{
+    background-color: blueviolet;
+}
+h1{
+    color: aqua;
+}
+@media(max-width:991px){
+body{
+    background-color: yellow;
+}
+h1{
+    color: green;
+}
+}
+/*Movile First*/
+@media(min-width:320px)
