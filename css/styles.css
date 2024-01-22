@@ -11,10 +11,14 @@ color: white;
 section article{
     background-color: grey;
 }
-
-.prox-show{
-    display: flex;
-    align-items: center;
+.carousel-inner img{
+    width: 330px;
+    height: 330px;
+    margin-bottom: 50px;
+}   
+.carousel-inner iframe{
+    width: 300px;
+    height: 300px;
 }
 
 
