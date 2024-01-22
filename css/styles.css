@@ -2,11 +2,21 @@ h2{
     color: orange;
 }
 h1{
-    color: red;
+    color: orange;
+}
+p{
+color: white;    
+
 }
 section article{
     background-color: grey;
 }
+
+.prox-show{
+    display: flex;
+    align-items: center;
+}
+
 
 body{
     background-image: url(../img/Portada.jpg);
@@ -14,44 +24,72 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+   
 }
 
-.shows img{
-    
-    width: 500px
+section div p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
-.shows ul{
-    position: absolute;
-    top: 330px;
-    right: 650px;
-}
-.shows iframe{
-    position: absolute;
-    top: 330px;
-    right: 230px;
-}
-/*Clase 07*/
 
-css> style.css >{} @media (max-width:480px)
+/* pagina tienda*/
+
+.card{
+    border: 2px solid orange;
+    margin: 10px; 
+
+}
+.card-text{
+    color: black;
+    width: 900px;
+}
+
+
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer"
+    ;    
+}
+body header{
+    grid-area: header;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+aside nav ul{
+    color: white;
+    list-style-type: none;
+}
+
+nav{
+    background-color:transparent;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
 @media(max-width:480px){
     body{
         background-color: black;
         }
 }
-/*Destock First*/
-body{
-    background-color: blueviolet;
+@media (min-width:481px){
+
 }
-h1{
-    color: aqua;
-}
-@media(max-width:991px){
-body{
-    background-color: yellow;
-}
-h1{
-    color: green;
-}
-}
-/*Movile First*/
-@media(min-width:320px)
