@@ -1,7 +1,10 @@
-h2{
+h1{
     color: orange;
 }
-h1{
+h3{
+    color: orange;
+}
+h2{
     color: orange;
 }
 p{
@@ -10,15 +13,23 @@ color: white;
 }
 section article{
     background-color: grey;
+    font-family: sans-serif;   
+    align-items: center;
+    align-items: center;    
 }
+section article ul{
+    padding: 40px;    
+}
+
+
 .carousel-inner img{
     width: 330px;
     height: 330px;
     margin-bottom: 50px;
 }   
 .carousel-inner iframe{
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
 }
 
 
@@ -78,6 +89,7 @@ aside{
 aside nav ul{
     color: white;
     list-style-type: none;
+    display: contents;
 }
 
 nav{
@@ -86,6 +98,17 @@ nav{
 
 footer{
     grid-area: footer;
+    color: rgb(146, 95, 1);
+    border: 1px solid orange;    
+
+}
+footer ul{
+    display: flex;
+    color: white;    
+}
+footer ul li{
+    margin-left: 30px;
+    list-style-type: none;
 }
 
 
