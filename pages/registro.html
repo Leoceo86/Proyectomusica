@@ -13,109 +13,112 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header id="arriba">
-        <!--Boostrap nav bar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Bandas locales</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <!--Boostrap nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="../img/clave de sol.jpg" alt="logo">
+            <a class="navbar-brand" href="#">Rockeando</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../pages/disqueria.html">Disqueria</a>
-                  </li>                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/tienda.html">Tienda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="registro.html">Registrate</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Generos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Rock</a></li>
-                      <li><a class="dropdown-item" href="#">Reggae</a></li>
-                      <li><a class="dropdown-item" href="#">Urbano</a></li>
-                    </ul>
-                  </li>
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/disqueria.html">Disqueria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/registro.html">Registrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cancionero.html">Cancionero</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-
-    </header>
+        </div>            
+    </nav>
+</header>
     <main>
-        <section>
-        <h1>Registra tu banda</h1>
+      <h1>Registrate</h1>
          <p>Registrate y comparti tu musica</p>
-         
+        <section>         
          <form>
             <fieldset>
                 <legend>Datos de registro</legend>
-            <div>
-                <label for="nombrebanda">Nombre del grupo o solista</label>
+            <div class= "campos">
+                <label for="nombrebanda"><strong>Nombre del grupo o solista</strong></label>
 
                 <input id="nombrebanda" type="text"
                 placeholder="Ingresar nombre de banda"
                 required>
             </div>
-            <div>
-                <label for="generos">Generos</label>
+            <div class= "campos">
+                <label for="generos"><strong>Generos</strong></label>
 
                 <input id="generos" type="text"
                 placeholder="ingrese generos"
                 required>
             </div>
-            <div>
-                <label for="email">Email</label>
+            <div class= "campos">
+                <label for="email"><strong>Email</strong></label>
 
                 <input id="email" type="email"
                 placeholder="ingrese direccion de email"
                 required>
             </div>
-            <div>
-                <label for="telefono">Telefono de contacto</label>
+            <div class= "campos">
+                <label for="telefono"><strong>Telefono de contacto</strong></label>
 
                 <input id="telefono" type="telefono"
                 placeholder="Ingrese numero con el formato 1155667788"
                 required>
             </div>
-            <div>
-                <label for="mensaje">Ingresa una descripcion del grupo</label>
+            <div class= "campos">
+                <label for="localidad"><strong>Localidad</strong></label>
+
+                <input id="localidad" type="localidad"
+                placeholder="Ingrese numero con el formato 1155667788"
+                required>
+            </div>
+            <div class= "campos">
+                <label for="mensaje"><strong>Ingresa una descripcion del grupo</strong></label>
             </div>
             <div>
                 <textarea name="" id="" cols="30" rows="10"
                 placeholder="Escriba aca su comentario..."></textarea>
             </div>
-            <div>
-                <input type="submit" value="Ser parte de la comunidad 3D">
+            <div class="submit">
+              <button>
+                <span class="text">Se parte de la Comunidad</span>
+                <span class="shimmer"></span>
+            </button>                
             </div>
             </fieldset>
          </form>
         </section>         
     </main>
 
-    <section>
-        <h2>Seguinos en nuestras redes sociales</h2>
-        <a href="">Instagram</a>
-        <a href="">Facebook</a>
-        <a href="">Telegram</a>
-    </section>
-
-    
+        
     <footer>
         <h4>Seguinos en nuestras redes sociales</h4>
         <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Telegram</li>
+            <li>
+                <a href="#">Instagram</a>
+            </li>
+            <li>
+                <a href="#">Facebook</a>
+            </li>
+            <li>
+                <a href="#">Telegram</a>
+            </li>
         </ul>
     </footer>
 </body>

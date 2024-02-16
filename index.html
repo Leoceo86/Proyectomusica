@@ -13,16 +13,23 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=RocknRoll+One&display=swap"
+        rel="stylesheet">
+
     <!--Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header id="arriba">
+    <header>
         <!--Boostrap nav bar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Bandas locales</a>
+                <img src="img/clave de sol.jpg" alt="logo">
+                <a class="navbar-brand" href="#">Rockeando</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,124 +38,99 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/disqueria.html">Disqueria</a>
+                            <a class="nav-link active" href="pages/disqueria.html">Disqueria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/tienda.html">Tienda</a>
+                            <a class="nav-link active" href="pages/tienda.html">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/registro.html">Registrate</a>
+                            <a class="nav-link active" href="pages/registro.html">Registrate</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Generos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Rock</a></li>
-                                <li><a class="dropdown-item" href="#">Reggae</a></li>
-                                <li><a class="dropdown-item" href="#">Urbano</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/cancionero.html">Cancionero</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>            
         </nav>
-
     </header>
 
-    <h1>Espacio dedicado a las bandas locales</h1>
+    
+
     <!--Carrousel-->
     <main>
+        <h1>Bienvenidos</h1>
+    <p>Espacio dedicado a las bandas locales</p>
         <h3>Proximos Shows</h3>
         <section class="container text-center">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <article>
-                            <h2>Divididos</h2>
-                            <p>La aplanadora se presenta en River Plate</p>
-                            <div class="row">
-                                <div class="col-4">
+                        <article>  
+                            <h2>Divididos</h2>                          
+                            <div class="grilla-shows">
+                                <div>
                                     <img src="img/Divididos2.jpg" class="img-artist" alt="Divididos" title="Divididos">
                                 </div>
-                                <div class="col-2">
+                                <div class="info">
                                     <ul>
                                         <li>Fecha 31.12.2024</li>
                                         <li>Lugar: River Plate</li>
-                                        <li>
-                                            <button type="button" class="btn btn-outline-warning">Entradas</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3244230031014!2d-58.452008124262306!3d-34.545340372975296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae5dde0ed%3A0x79bbb6038fd01b0c!2sClub%20Atl%C3%A9tico%20River%20Plate!5e0!3m2!1ses-419!2sar!4v1702511891797!5m2!1ses-419!2sar"
-                                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="carousel-item" class="container">
-                        <article>
-                            <h2>Charly Garcia</h2>
-                            <p>Se presenta en Obras</p>
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="img/charlyg.jpg" class="img-artist" alt="Metallica" title="Divididos">
-                                </div>
-                                <div class="col-2">
-                                    <ul>
-                                        <li>Fecha 31.12.2024</li>
-                                        <li>Lugar: Obras</li>
-                                        <li>
-                                            <button type="button" class="btn btn-outline-warning">Entradas</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3338019615235!2d-58.46159698916423!3d-34.5451028542914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb426ba8c1e9b%3A0x45305aa2ca115efa!2sEstadio%20Obras%20Sanitarias!5e0!3m2!1ses-419!2sar!4v1705903727306!5m2!1ses-419!2sar"
-                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </ul> 
+                                    <p>La aplanadora se presenta en River Plate</p>
+                                    <button class="submit">
+                                        <span class="text">Entradas</span>
+                                        <span class="shimmer"></span>
+                                    </button>                                   
                                 </div>
                             </div>
                         </article>
                     </div>
                     <div class="carousel-item">
                         <article>
-                            <h2>Los fabulosos Cadillacs</h2>
-                            <p>Se presentan en Ferro</p>
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="img/fabulosos1.jpg" class="img-artist" alt="Metallica" title="Divididos">
+                            <h2>Charly Garcia</h2>
+                            <div class="grilla-shows">
+                                <div>
+                                    <img src="img/charlyg.jpg" class="img-artist" alt="Charly" title="Charly">
                                 </div>
-                                <div class="col-2">
+                                <div class="info">
+                                    <ul>
+                                        <li>Fecha 26.12.1982</li>
+                                        <li>Lugar: Ferro</li>
+                                    </ul>
+                                    <p>Charly García en vivo, presentando "Yendo de la cama al living", su primer disco
+                                        como solista, el 26 de Diciembre de 1982, en el estadio de Ferro Carril Oeste,
+                                        de la Ciudad de Buenos Aires.</p>
+                                    <button class="submit">
+                                        <span class="text">Entradas</span>
+                                        <span class="shimmer"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article >
+                            <h2>Los Fabulosos Cadillacs</h2>
+                            <div class="grilla-shows">
+                                <div>
+                                    <img src="img/fabulosos1.jpg" class="img-artist" alt="Fabulosos" title="Fabulosos">
+                                </div>
+                                <div class="info">
                                     <ul>
                                         <li>Fecha 31.12.2024</li>
                                         <li>Lugar: Ferro</li>
-                                        <li>
-                                            <button type="button" class="btn btn-outline-warning">Entradas</button>
-                                        </li>
                                     </ul>
-                                </div>
-                                <div class="col-6">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.424623465101!2d-58.453307903210415!3d-34.6187083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3da8e6fc21%3A0x412efd9a8e59ca97!2sAv.%20Avellaneda%201220%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705903651721!5m2!1ses-419!2sar"
-                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>Luego del explosivo y tan esperado reencuentro con su público argentino en el
+                                        Movistar Arena, la banda se presentará el 2 de diciembre en el estadio de Ferro
+                                    </p>
+                                    <button class="submit">
+                                        <span class="text">Entradas</span>
+                                        <span class="shimmer"></span>
+                                    </button>
                                 </div>
                             </div>
                         </article>
@@ -168,20 +150,26 @@
 
         </section>
     </main>
+    
     <section>
-        <h2>Espacio reservado para publicidad</h2>
-        <p>Parrafo de muestra</p>
-
-        <p>Parrafo de muestra</p>
-
-        <p>Parrafo de muestra</p>
-
-        <p>Parrafo de muestra</p>
-
+         <h2>Tienda online</h2>
+         <p>Visita nuestra tienda para comprar y vender tus instrumentos</p>
+        <nav class="enlacetienda"> 
+            <a href="pages/tienda.html"><img src="img/guitarra1.jpg" alt="guitarra1" title="guitarra1"></a>
+            <a href="pages/tienda.html"><img src="img/Bateria1.png" alt="Bateria1" title="Bateria1"></a>
+            <a href="pages/tienda.html"><img src="img/guitarra2.jpg" alt="guitarra2" title="guitarra2"></a>
+            <a href="pages/tienda.html"><img src="img/conga1.png" alt="conga" title="conga"></a>
+        </nav> 
     </section>
 
-    <section>
-        <article>
+    <section class="tabs">
+        <article class="tabs1">
+            <h2>Tabs</h2>
+            <p>Incentiva a otros a tocar tus canciones y difundi tu musica</p>
+            <a href="pages/cancionero.html"><img src="img/tabs.jpg" alt="Tabs" title="Tablaturas"></a>
+            
+        </article>
+        <article class="rank">
             <h2>Ranking de bandas</h2>
             <ol>
                 <li>Metallica</li>
@@ -197,14 +185,7 @@
             </ol>
         </article>
     </section>
-
-    <section>
-        <article>
-            <h2>Tabs</h2>
-            <p>Incentiva a otros a tocar tus canciones y difundi tu musica</p>
-            <img src="img/tabs.jpg" alt="Tabs" title="Tablaturas">
-        </article>
-    </section>
+    
 
     <section>
         <article>
@@ -213,17 +194,19 @@
         </article>
     </section>
 
-
-    <a href="#arriba"><button type="button" class="btn btn-secondary btn-sm" alt="ir arriba" title="ir arriba">Ir arriba</button>
-    </a>
-
     <footer>
-        <!--Esto lo agregue solo para practicar la funcionalidad-->
-        <h2>playlist</h2>
-        <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/track/7vFC68CBMKu99p4tIz6yzx?utm_source=generator" width="100%"
-            height="152" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <h4>Seguinos en nuestras redes sociales</h4>
+        <ul>
+            <li>
+                <a href="#">Instagram</a>
+            </li>
+            <li>
+                <a href="#">Facebook</a>
+            </li>
+            <li>
+                <a href="#">Telegram</a>
+            </li>
+        </ul>
     </footer>
 
 </body>

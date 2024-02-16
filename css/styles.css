@@ -1,122 +1,498 @@
-h1{
-    color: orange;
+*{
+    margin: 0;
+    padding: 0;
 }
-h3{
-    color: orange;
-}
-h2{
-    color: orange;
-}
-p{
-color: white;    
 
+@font-face {
+    font-family: "ROCK-ON";
+    src: url(../fonts/Typoster\ ROCK-ON\ Shadowed\ Demo.otf);
 }
-section article{
-    background-color: grey;
-    font-family: sans-serif;   
+
+@font-face {
+    font-family: "ROCK-ON1";
+    src: url(../fonts/Typoster\ ROCK-ON\ Demo.otf);
+}
+
+h1 {
+    color: orange;
+    font-family: "ROCK-ON1";
+}
+
+h2 {
+    color: orange;
+    grid-area: h2;
+    font-family: "ROCK-ON1";
+    border: 1px solid rgb(255, 178, 36);
+    font-size: 40px;
+}
+
+h3 {
+    color: orange;
+    font-family: 'Cinzel', serif;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+h4 {
+    color: orange;
+    font-family: 'Cinzel', serif;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+h5 {
+    color: rgb(241, 179, 62);
+    font-family: 'Cinzel', serif;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+p {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-family: 'RocknRoll One', sans-serif;
+    grid-area: p;
+}
+
+/*Titulo barra navegacion*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;    
+}
+
+header .container-fluid {
+    background-color: rgb(172, 163, 163);           
+}
+
+header nav .navbar-brand {
+    font-family: "ROCK-ON1";
+    color: rgb(15, 11, 4);
+    font-size: 50px;
+}
+
+header nav img {
+    width: 70px; 
+    padding: 5px 5px;       
+}
+
+/*carusel*/
+.carousel-inner {
+    border: 2px solid orange;
+    width: 100%;
+    box-shadow: 0 0 30px rgb(235, 232, 226);
+}
+
+/*GRID index shows*/
+.grilla-shows {
+    display: grid;
+    grid-template-areas:
+        "h2 h2"
+        "img ul"
+        "img info"       
+    ; 
+    justify-content: center;
     align-items: center;
-    align-items: center;    
+    gap: 10px 70px;
 }
-section article ul{
-    padding: 40px;    
-}
-
-
-.carousel-inner img{
-    width: 330px;
-    height: 330px;
-    margin-bottom: 50px;
-}   
-.carousel-inner iframe{
-    width: 330px;
-    height: 330px;
+.info{
+    grid: info;
+    width: 300px;
+    align-items: center;
+    justify-content: center;    
 }
 
+main section article {
+    background-color: rgb(102, 101, 100);
+    font-family: sans-serif; 
+}
 
-body{
-    background-image: url(../img/Portada.jpg);
+main section article div img {
+    grid-area: img;
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px;
+    height: 400px;   
+}
+
+main section article div ul {
+    grid-area: ul;
+}
+
+section article ul li {
+    padding: 20px;
+    color: azure;
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+body {
+    background-image: url(../img/unnamed.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-   
+}
+section{
+    margin-top: 20px;
 }
 
-section div p{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+/*Enlace tienda - index*/
+.enlacetienda{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;  
+    gap: 10px;
+}
+.enlacetienda img{
+    max-width: 100%;
+    width: 250px; 
+    height: 300px;   
 }
 
-/* pagina tienda*/
-
-.card{
+/*Tabs rank- index*/
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    padding: 10px 10px;
+}
+.tabs1{      
     border: 2px solid orange;
-    margin: 10px; 
-
+    box-shadow: 0 0 30px rgb(235, 232, 226);    
 }
-.card-text{
-    color: black;
-    width: 900px;
+.tabs1 img{
+    margin: 5px;
+    max-width: 100%;
+}
+.rank{
+    color: azure;
+    border: 2px solid orange;
+    box-shadow: 0 0 30px rgb(235, 232, 226);
+    margin-top: 10px;
+    max-width: 100%;
+    font-size: 20px;
 }
 
+/*Cards - Tienda*/
 
-.grilla{
+.card {
+    border: 2px solid orange;
+    background-color: rgb(5, 5, 5);
+    margin: 0 auto;
+    padding: 10px 10px;
+    display: flex;
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-title {
+    color: rgb(241, 184, 77);
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.card-text {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card a {
+    color: orange;
+    background-color: black;
+    border: dotted 1px orange;
+}
+
+/*Grid - Tienda*/
+.grilla {
     display: grid;
     grid-template-areas:
-    "header header header"
-    "aside main main"
-    "footer footer footer"
-    ;    
+        "header header header"
+        "aside main main"
+        "footer footer footer"
+    ;
 }
-body header{
+
+body header {
     grid-area: header;
 }
 
-.productos{
+.productos {
     display: grid;
-    grid-template-columns: repeat(3,400px);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 1fr);   
     justify-content: center;
+    gap: 20px;
+   
 }
 
-main{
+main {
     grid-area: main;
+    padding: 10px auto;
+    
 }
-aside{
+
+aside {
     grid-area: aside;
+    padding: 30px;
+    background-color: gray;
+    border-right: solid 2px orange;
+    max-width: 100%;
+    width: 200px;
 }
-aside nav ul{
+
+aside nav ul li {
     color: white;
     list-style-type: none;
-    display: contents;
+    height: 50px;    
 }
 
-nav{
-    background-color:transparent;
-}
-
-footer{
+/*Footer*/
+footer {
     grid-area: footer;
     color: rgb(146, 95, 1);
-    border: 1px solid orange;    
+    border: 1px solid orange;
+}
 
-}
-footer ul{
+footer ul {
     display: flex;
-    color: white;    
+    color: white;
 }
-footer ul li{
+
+footer ul li {
     margin-left: 30px;
     list-style-type: none;
 }
 
-
-@media(max-width:480px){
-    body{
-        background-color: black;
-        }
+a {
+    text-decoration: none;
 }
-@media (min-width:481px){
+
+/*Formulario - Registro*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: orange;
+    font-weight: 100px;
+
+}
+
+/*Boton Formulario submit - Registro*/
+.submit {
+    --glow-hue: 222deg;
+    --shadow-hue: 180deg;
+    --spring-easing: linear(0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+            1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+            1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+            0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+            0.998 84%, 1);
+    --spring-duration: 1.33s;
+}
+
+@property --shimmer {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 33deg;
+}
+
+@keyframes shimmer {
+    0% {
+        --shimmer: 0deg;
+    }
+
+    100% {
+        --shimmer: 360deg;
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text {
+    0% {
+        background-position: 100% center;
+    }
+
+    100% {
+        background-position: -100% center;
+    }
+}
+
+button {
+    color: var(--bg);
+    font-weight: 600;
+    /*     background-image: linear-gradient(90deg, #fcecfe, #fbf6e7, #e6fcf5); */
+    background-image: linear-gradient(315deg,
+            #030303 -10%,
+            rgb(0, 0, 0) 50%,
+            #000000 110%);
+    padding: .8em 1.4em;
+    position: relative;
+    isolation: isolate;
+    box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 -10px 20px -10px hsla(var(--shadow-hue), 10%, 90%, 95%);
+    border-radius: 0.66em;
+    scale: 1;
+    transition: all var(--spring-duration) var(--spring-easing);
+}
+
+button:hover:not(:active),
+button.active {
+    transition-duration: calc(var(--spring-duration)*0.5);
+    scale: 1.2;
+    box-shadow: 0 4px 8px -2px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 0 0 transparent;
+}
+
+button:active {
+    scale: 1.1;
+    transition-duration: calc(var(--spring-duration)*0.5);
+}
+
+.shimmer {
+    position: absolute;
+    inset: -40px;
+    border-radius: inherit;
+    mask-image: conic-gradient(from var(--shimmer, 0deg),
+            transparent 0%,
+            transparent 10%,
+            black 36%,
+            black 45%,
+            transparent 50%,
+            transparent 60%,
+            black 85%,
+            black 95%,
+            transparent 100%);
+    mask-size: cover;
+    mix-blend-mode: plus-lighter;
+    animation: shimmer 1s linear infinite both;
+}
+
+button:hover .shimmer::before,
+button:hover .shimmer::after,
+button.active .shimmer::before,
+button.active .shimmer::after {
+    opacity: 1;
+    animation: shine 1.2s ease-in 1 forwards;
+}
+
+.shimmer::before,
+.shimmer::after {
+    transition: all 0.5s ease;
+    opacity: 0;
+    content: "";
+    border-radius: inherit;
+    position: absolute;
+    mix-blend-mode: color;
+    inset: 40px;
+    pointer-events: none;
+}
+
+.shimmer::before {
+    box-shadow: 0 0 3px 2px hsl(var(--glow-hue) 20% 95%),
+        0 0 7px 4px hsl(var(--glow-hue) 20% 80%),
+        0 0 13px 4px hsl(var(--glow-hue) 50% 70%),
+        0 0 25px 5px hsl(var(--glow-hue) 100% 70%);
+    z-index: -1;
+}
+
+.shimmer::after {
+    box-shadow: inset 0 0 0 1px hsl(var(--glow-hue) 70% 95%),
+        inset 0 0 2px 1px hsl(var(--glow-hue) 100% 80%),
+        inset 0 0 5px 2px hsl(var(--glow-hue) 100% 70%);
+    z-index: 2;
+}
+
+button .text {
+    color: orange;
+    background-clip: text;
+    background-color: var(--bg);
+    background-image: linear-gradient(120deg, transparent, hsla(var(--glow-hue), 100%, 80%, 0.66) 40%, hsla(var(--glow-hue), 100%, 90%, .9) 50%, transparent 52%);
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    background-position: center 200%;
+}
+
+button:hover .text,
+button.active .text {
+    animation: text .66s ease-in 1 both;
+}
+
+/*Reproductor - Disqueria*/
+
+/*Responsive*/
+/*Desktop First*/
+@media (max-width:991px) {
+    .productos {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(6, 1fr);   
+    }
+
+}
+
+@media(max-width:480px) {
+    /*grid tienda*/
+    .grilla {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer"
+        ;
+    }   
+    .productos {
+        grid-template-columns: 400px;
+        grid-template-rows: repeat(6, 1fr);   
+    }
+    /*GRID index shows*/
+.grilla-shows {
+    grid-template-areas:
+        "h2"
+        "img"
+        "ul"
+        "p"
+    ;    
+    }
+}
+
+
+
+/*Mbile First*/
+@media (min-width:320px) {
+
+}
+
+@media (min-width:576px) {
+
+}
+
+@media (min-width:1100px) {
 
 }

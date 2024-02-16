@@ -18,11 +18,12 @@
 </head>
 
 <body class="grilla">
-    <header id="arriba">
+    <header>
         <!--Boostrap nav bar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Bandas locales</a>
+                <img src="../img/clave de sol.jpg" alt="logo">
+                <a class="navbar-brand" href="#">Rockeando</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,71 +32,96 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link active" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/disqueria.html">Disqueria</a>
+                            <a class="nav-link active" href="../pages/disqueria.html">Disqueria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tienda.html">Tienda</a>
+                            <a class="nav-link active" href="../pages/tienda.html">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/registro.html">Registrate</a>
+                            <a class="nav-link active" href="../pages/registro.html">Registrate</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Generos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Rock</a></li>
-                                <li><a class="dropdown-item" href="#">Reggae</a></li>
-                                <li><a class="dropdown-item" href="#">Urbano</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cancionero.html">Cancionero</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>            
         </nav>
-        <h1>Tienda</h1>
-        <h3>Compra y venta de articulos musicales</h3>
     </header>
-
-
 
     <!--GRID -->
     <main>
+        <h1>Tienda</h1>
+        <p>Compra y venta de articulos musicales</p>
+
         <section class="productos">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="../img/guitarra1.jpg" class="card-img-top" alt="guitarra1" title="guitarra1">
                 <div class="card-body">
-                    <h5 class="card-title">Guitarra Eléctrica Nigrelli Alchimia Luthier</h5>
+                    <h5 class="card-title">Guitarra Eléctrica Luthier</h5>
                     <p class="card-text">Guitarra de la línea Alchimia</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+                    <button class="submit">
+                        <span class="text">Ver</span>
+                        <span class="shimmer"></span>
+                    </button>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="../img/guitarra2.jpg" class="card-img-top" alt="guitarra2" title="guitarra2">
                 <div class="card-body">
                     <h5 class="card-title">Guitarra 2</h5>
                     <p class="card-text">Guitarra buen estado.</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+                    <button class="submit">
+                        <span class="text">Ver</span>
+                        <span class="shimmer"></span>
+                    </button>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="../img/amplificador1.jpg" class="card-img-top" alt="amplificador1" title="amplificador1">
                 <div class="card-body">
                     <h5 class="card-title">Amplificador</h5>
                     <p class="card-text">Amplificador buen estado.</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+                    <button class="submit">
+                        <span class="text">Ver</span>
+                        <span class="shimmer"></span>
+                    </button>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="../img/amplificador1.jpg" class="card-img-top" alt="amplificador1" title="amplificador1">
                 <div class="card-body">
                     <h5 class="card-title">Amplificador</h5>
                     <p class="card-text">Amplificador buen estado.</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+                    <button class="submit">
+                        <span class="text">Ver</span>
+                        <span class="shimmer"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/guitarra1.jpg" class="card-img-top" alt="guitarra1" title="guitarra1">
+                <div class="card-body">
+                    <h5 class="card-title">Guitarra Eléctrica Luthier</h5>
+                    <p class="card-text">Guitarra de la línea Alchimia</p>
+                    <button class="submit">
+                        <span class="text">Ver</span>
+                        <span class="shimmer"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/guitarra1.jpg" class="card-img-top" alt="guitarra1" title="guitarra1">
+                <div class="card-body">
+                    <h5 class="card-title">Guitarra Eléctrica Luthier</h5>
+                    <p class="card-text">Guitarra de la línea Alchimia</p>
+                    <button class="submit">
+                        <span class="text">Ver</span>
+                        <span class="shimmer"></span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -103,22 +129,37 @@
     <aside>
         <nav>
             <ul>
-                <li>Ubicacion</li>
-                <li>Categorias</li>
-                <li>Marca</li>
-                <li>Precio</li>
-                <li>Condicion</li>
+                <li>
+                    <a class="nav-link active" href="#">Ubicacion</a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="#">Categorias</a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="#">Marca</a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="#">Precio</a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="#">Condición</a>
+                </li>
             </ul>
         </nav>
-
     </aside>
 
     <footer>
         <h4>Seguinos en nuestras redes sociales</h4>
         <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Telegram</li>
+            <li>
+                <a href="#">Instagram</a>
+            </li>
+            <li>
+                <a href="#">Facebook</a>
+            </li>
+            <li>
+                <a href="#">Telegram</a>
+            </li>
         </ul>
     </footer>
 </body>
